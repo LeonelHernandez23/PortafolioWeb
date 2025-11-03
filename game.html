@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonel Hernández - Interactive Resume</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="instructions">
+        <h2>🎮 Portafolio Interactivo</h2>
+        <p>🖱️ Rueda del mouse / Flechas ↑↓ | 📋 Click en objetos 🎯</p>
+    </div>
+
+    <div class="game-ui">
+        <div>🎯 Nivel: <span id="level">1</span></div>
+        <div>⭐ Objetos encontrados: <span id="found">0</span>/6</div>
+        <div>📍 Posición: <span id="position">0m</span></div>
+    </div>
+
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressBar">0%</div>
+    </div>
+
+    <a href="index.html" class="professional-mode-btn">Versión Profesional</a>
+
+    <div class="info-panel" id="infoPanel">
+        <button class="close-panel" onclick="closePanel()">×</button>
+        <div id="panelContent"></div>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <script src="game.js"></script>
+</body>
+</html>
